@@ -770,7 +770,7 @@ footer ul li a {
         display: block;
         padding: 10px 10%;
         position: fixed;
-        width: 100%;
+        width: 90%;
         z-index: 2;
     }
 
@@ -965,5 +965,77 @@ footer ul li a {
         margin: 15px;
         background-color: #fff;
         box-shadow: 0px 0px 30px rgb(206, 200, 200);
+    }
+}
+
+@media only screen and (max-width:350px) {
+    header nav {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: block;
+        position: fixed;
+        width: 89.5%;
+        z-index: 2;
+    }
+
+    header nav .menu-list ul {
+        display: none;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    header nav .menu-list ul li a {
+        padding: 6px;
+        color: rgb(33, 181, 13);
+        font-size: 8px;
+    }
+
+    .about .head-text,
+    .our-service .head-text,
+    .my-skill .head-text,
+    .portfolio .head-text,
+    .my-team .head-text,
+    .blog .head-text,
+    .sms .head-text {
+        width: 55%;
+    }
+
+    .about .head-text h1,
+    .our-service .head-text h1,
+    .my-skill .head-text h1,
+    .portfolio .head-text h1,
+    .my-team .head-text h1,
+    .blog .head-text h1,
+    .sms .head-text h1 {
+        font-size: 24px;
+    }
+
+    .portfolio ul {
+        list-style: none;
+        display: block;
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .portfolio ul li {
+        padding: 10px 5%;
+        display: block;
+        background-color: #000;
+        margin: 5px 10px;
+    }
+
+    .portfolio ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 5px;
+        color: #fff;
+
+    }
+
+    footer ul li a {
+        text-decoration: none;
+        color: #fff;
+        margin: 5px;
     }
 }

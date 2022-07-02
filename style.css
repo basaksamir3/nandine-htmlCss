@@ -1,0 +1,969 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* font-family: 'Montserrat', sans-serif; */
+.my-pd {
+    padding: 10px 5%;
+}
+
+span {
+    color: #fe320a;
+}
+
+/* ================this is header section===================== */
+header nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    padding: 10px 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+header nav .brand-logo img {
+    width: 30%;
+
+}
+
+nav .brand-logo {
+    width: 40%;
+}
+
+nav .menu-list {
+    width: 60%;
+}
+
+header nav .menu-list ul {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+header nav .menu-list ul li a {
+    padding: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 11px;
+}
+
+/* ================this is header-content-part===================== */
+.header-content {
+    background: url(image/header.jpg);
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.header-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+}
+
+.header-content::before {
+    content: "";
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+button {
+    text-transform: capitalize;
+    padding: 10px 15px;
+    border: none;
+    background: #fe320a;
+    color: #fff;
+}
+
+/* =========================this is about section============================= */
+
+/* ============common style heading of about, our-service, my-skill========= */
+.about .head-text,
+.our-service .head-text,
+.my-skill .head-text,
+.portfolio .head-text,
+.my-team .head-text,
+.blog .head-text,
+.sms .head-text {
+    padding-top: 30px;
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about .head-text h1,
+.our-service .head-text h1,
+.my-skill .head-text h1,
+.portfolio .head-text h1,
+.my-team .head-text h1,
+.blog .head-text h1,
+.sms .head-text h1 {
+    margin: 9px 0px;
+    position: relative;
+}
+
+.about .head-text h1::before,
+.our-service .head-text h1::before,
+.my-skill .head-text h1::before,
+.portfolio .head-text h1::before,
+.my-team .head-text h1::before,
+.blog .head-text h1::before,
+.sms .head-text h1::before {
+    content: "";
+    display: block;
+    clear: both;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #fe320a;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    bottom: -50%;
+}
+
+.about .head-text hr,
+.our-service .head-text hr,
+.my-skill .head-text hr,
+.portfolio .head-text hr,
+.my-team .head-text hr,
+.blog .head-text hr,
+.sms .head-text hr {
+    height: 1px;
+    border: none;
+    background-color: #fe320a;
+    width: 50%;
+
+}
+
+/* ======================about section ========================== */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-left {
+    width: 30%;
+    margin: 2%;
+    position: relative;
+}
+
+.about-left img {
+    width: 100%;
+
+}
+
+.about-left .social {
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.about-left .social ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-left .social ul a {
+
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(249, 247, 247);
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 30px;
+
+}
+
+.about-left .social ul a:hover {
+    background: #fff;
+    color: black;
+}
+
+.about-right {
+    width: 62%;
+    margin: 2%;
+    color: #1e1e1e;
+}
+
+/* ========================this is service section================ */
+.our-service {
+    padding-top: 30px;
+}
+
+.our-service .service-image {
+    background: url(./image/moreAbout.png);
+    text-align: center;
+    color: #fff;
+    padding: 10% 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.our-service .service-image::before {
+    content: "";
+    display: block;
+    clear: both;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+.our-service .service-image h2 {
+
+    font-size: 500;
+}
+
+.our-service .service-image a {
+    padding: 0px;
+    margin: 0px;
+    font-size: 50px;
+    color: #fff;
+}
+
+.our-service .service-category .row {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 2%;
+    padding: 20px 0px;
+}
+
+.our-service .service-category .row .col a {
+    font-size: 40px;
+    color: #fe320a;
+}
+
+/* ===================this is my skill section===================== */
+.my-skill {
+    position: relative;
+    z-index: 1;
+}
+
+.my-skill-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.my-skill::before {
+    content: "";
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.my-skill-content .left-content {
+    width: 45%;
+    margin: 2%;
+}
+
+.my-skill-content .right-content {
+    width: 45%;
+    margin: 2%;
+}
+
+.progress-bar h4 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.out {
+    margin: 10px 0px;
+    height: 16px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    position: relative;
+    text-align: right;
+    color: #fff;
+    font-size: 10px;
+}
+
+.in {
+    background: #fe320a;
+    height: 8px;
+    border-radius: 3px;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translate(0%, -50%)
+}
+
+.in2 {
+    background: #fe320a;
+    height: 8px;
+    border-radius: 3px;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translate(0%, -50%)
+}
+
+.in3 {
+    background: #fe320a;
+    height: 8px;
+    border-radius: 3px;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translate(0%, -50%)
+}
+
+/* ==========================happy-clients================ */
+.happy-client {
+    background: url(./image/myskill.png);
+    position: relative;
+    z-index: 1;
+}
+
+.happy-client::before {
+    content: "";
+    display: block;
+    clear: both;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.happy-client .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5% 5%;
+    align-items: center;
+}
+
+.happy-client .col {
+    width: 20%;
+    margin-left: 3%;
+    text-align: center;
+    color: #fff;
+
+}
+
+.happy-client .col a {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+
+/* -- ------------------this is a portfolio section---------------- -- */
+.portfolio {
+    padding: 50px 0px;
+}
+
+.porfolio-list {
+    padding: 30px 0px;
+}
+
+.portfolio ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px;
+    color: #3c3c3c;
+}
+
+.portfolio .row {
+    display: flex;
+}
+
+.portfolio .row .col-1 {
+    margin: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.portfolio .row .col-1 .over {
+    background-color: rgba(255, 0, 0, 0.5);
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.portfolio .col-1 img:hover+.over {
+    display: flex;
+}
+
+.portfolio .row .col-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+/* --------------------this is my-team section--------------- */
+.my-team {
+    background-color: #e1e1e1;
+    padding: 50px 0px;
+}
+
+.my-team .row {
+    display: flex;
+}
+
+.my-team .row .col-2 {
+    margin: 10px;
+    position: relative;
+}
+
+.my-team .row .col-2 img {
+    width: 100%;
+    height: 100%;
+    border-bottom: 7px solid red;
+
+}
+
+.my-team .row .col-2 img:hover+.over {
+    display: block;
+}
+
+.my-team .row .col-2 .over {
+    background-color: rgba(255, 0, 0, 0.5);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+
+}
+
+.my-team .row .col-2 .over .social {
+
+    background-color: #ee0909;
+    /* display:flex; */
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    text-align: center;
+}
+
+.my-team .row .col-2 .over .social ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+
+}
+
+.my-team .row .col-2 .over .social ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+/* --------------------testomonial section--------------- */
+.testomonial {
+    padding: 30px 0px;
+    background: url(./image/introduction.png);
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.testomonial .div {
+    padding: 30px 25%;
+    /* text-align: justify; */
+}
+
+.testomonial::before {
+    content: " ";
+    display: block;
+    clear: both;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+
+}
+
+/* --------------------this is a blog section-------------------- */
+.blog .blog-heading {
+    padding: 30px 0px;
+}
+
+.blog .row {
+    padding: 30px 0px;
+    display: flex;
+}
+
+.blog .row .blog-1 {
+    margin: 15px;
+    /* border: 1px solid gray; */
+    background-color: #fff;
+    box-shadow: 0px 0px 30px rgb(206, 200, 200);
+}
+
+.blog .row .blog-1 .text {
+
+    padding: 5px 0px 15px 15px;
+    font-size: 14px;
+}
+
+.blog .row .blog-1 h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.blog .row .blog-1 .fa-clock {
+    color: red;
+    font-size: 12px;
+}
+
+.blog .row .blog-1 .text button {
+    background-color: #000;
+}
+
+.blog .row img {
+    width: 100%;
+}
+
+/* ------------------this is text section--------------------- */
+.sms {
+    background: url(./image/blogText.png);
+    padding: 30px 0px;
+    position: relative;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sms::before {
+    content: " ";
+    display: block;
+    clear: both;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.sms h1 {
+    color: #fff;
+}
+
+.sms .text-area {
+    padding: 30px 0px;
+
+}
+
+.sms .text-area .top {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.sms .text-area .top p {
+    border: 1px solid #fff;
+    width: 40%;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    color: #fff;
+
+}
+
+.sms .text-area .bottom {
+    margin: 0px 11%;
+
+
+}
+
+.sms .text-area .bottom p {
+    border: 1px solid #fff;
+    width: 99%;
+    padding: 10px 0px 150px 10px;
+    border-radius: 10px;
+    color: #fff;
+
+
+}
+
+.sms .text-area .bottom button {
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* ========================== footer section ============== */
+footer {
+    background: #000;
+}
+
+footer .footer-area {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+footer p {
+    padding: 0px;
+    margin: 0px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+
+.footer-area {
+    padding: 20px 0px;
+}
+
+
+/* ===============================================================
+=============================================================== */
+/* -----------------------resposive area--------------- */
+@media only screen and (max-width:768px) {
+    header nav {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        padding: 8px 5%;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+    }
+
+    header nav .brand-logo img {
+        width: 50%;
+
+    }
+
+    nav .brand-logo {
+        width: 20%;
+    }
+
+    nav .menu-list {
+        width: 80%;
+    }
+
+    .about .head-text,
+    .our-service .head-text,
+    .my-skill .head-text,
+    .portfolio .head-text,
+    .my-team .head-text,
+    .blog .head-text,
+    .sms .head-text {
+        width: 30%;
+    }
+
+    .about .head-text h1,
+    .our-service .head-text h1,
+    .my-skill .head-text h1,
+    .portfolio .head-text h1,
+    .my-team .head-text h1,
+    .blog .head-text h1,
+    .sms .head-text h1 {
+        font-size: 25px;
+    }
+
+    /* ---------------------------service section------------------------ */
+    .our-service .service-category .row {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+        margin: 2%;
+        padding: 20px 0px;
+    }
+
+    .our-service .service-category .row .col {
+        width: 33%;
+        margin: 3px;
+    }
+
+}
+
+/* -----------------resposive area max-450------------------ */
+
+@media only screen and (max-width:450px) {
+    header nav {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: block;
+        padding: 10px 10%;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+    }
+
+    header nav .brand-logo img {
+        display: block;
+        width: 25%;
+        margin: 0 auto;
+
+    }
+
+    nav .brand-logo {
+        width: 100%;
+    }
+
+    nav .menu-list {
+        width: 100%;
+    }
+
+    header nav .menu-list ul {
+        display: flex;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    header nav .menu-list ul li a {
+        padding: 8px;
+        color: rgb(33, 181, 13);
+        font-size: 10px;
+    }
+
+    /* ================this is header-content-part===================== */
+    .header-content {
+        background: url(image/header.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 520px;
+        display: flex;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+    }
+
+    .header-content h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+
+    }
+
+    .header-content p {
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    /* ======================about section ========================== */
+
+    .about .head-text,
+    .our-service .head-text,
+    .my-skill .head-text,
+    .portfolio .head-text,
+    .my-team .head-text,
+    .blog .head-text,
+    .sms .head-text {
+        width: 50%;
+    }
+
+
+
+    .about-content {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-left {
+        width: 96%;
+        margin: 2%;
+        position: relative;
+    }
+
+    .about-left img {
+        width: 100%;
+
+    }
+
+
+    .about-right {
+        width: 98%;
+        margin: 2%;
+        color: #1e1e1e;
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    /* ---------------------our service------------- */
+    .our-service .service-category .row {
+        display: block;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+        margin: 2%;
+        padding: 20px 0px;
+    }
+
+    .our-service .service-category .row .col {
+        width: 94%;
+        margin: 3px;
+
+    }
+
+    .our-service .service-category .row .col p {
+        font-size: 18px;
+    }
+
+    .our-service .service-category .row .col a {
+        font-size: 25px;
+        color: #fe320a;
+    }
+
+    /* ===================this is my skill section===================== */
+    .my-skill-content {
+        display: block;
+
+    }
+
+    .my-skill-content .left-content {
+        width: 96%;
+        margin: 2%;
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    .my-skill-content .right-content {
+        width: 96%;
+        margin: 2%;
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    /* ==========================happy-clients================ */
+
+    .happy-client .col a {
+        font-size: 15px;
+    }
+
+    .happy-client .col h2 {
+        font-size: 18px;
+    }
+
+    .happy-client .col h3 {
+        font-size: 18px;
+    }
+
+    /* ------------------portfolio---------------- */
+    .portfolio .row {
+        display: block;
+    }
+
+
+    /* ----------------my-team--------------- */
+    .my-team .row {
+        display: block;
+    }
+
+    /* --------------------testomonial section--------------- */
+    .testomonial .div {
+        padding: 20px 10%;
+    }
+
+    .testomonial .div img {
+        width: 70px;
+    }
+
+    .testomonial .div p {
+        text-align: justify;
+    }
+
+    /* --------------------this is a blog section-------------------- */
+    .blog .blog-heading {
+        padding: 10px 0px;
+    }
+
+    .blog .row {
+        padding: 30px 0px;
+        display: block;
+    }
+
+    .blog .row .blog-1 {
+        margin: 15px;
+        background-color: #fff;
+        box-shadow: 0px 0px 30px rgb(206, 200, 200);
+    }
+}
